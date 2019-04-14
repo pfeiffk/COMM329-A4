@@ -5,15 +5,18 @@
     <meta charset="utf-8">
     <title>Help</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">art.</a>
+      <a class="navbar-brand" href="#">
+        <img class="img-responsive" width="40" height="40" src="img/art.png" alt="logo">
+        rt.
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,14 +31,18 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Gallery</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Artists
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">John Doe</a>
-              <a class="dropdown-item" href="#">Somebody Cool</a>
-              <a class="dropdown-item" href="#">Albert</a>
+              <a class="dropdown-item" href="#">A. Pardee</a>
+              <a class="dropdown-item" href="#">B. Yousart</a>
+              <a class="dropdown-item" href="#">C. Box</a>
+              <a class="dropdown-item" href="#">P. Artwork</a>
             </div>
           </li>
         </ul>
@@ -55,48 +62,39 @@
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" id="item">
               <!--../../../desktop/img/Defender.jpg-->
-              <img src="https://picsum.photos/1280/720?image=1064" class="d-block w-100" alt="...">
+              <img src="https://static1.squarespace.com/static/52f442b6e4b04cffe22d78f0/5a33224553450a16518a90c3/5a33328e652dea7bc2ac2545/1513306231051/ScratchFamily.jpg?format=2500w" class="d-block w-100" alt="Scratch family" width="1280" height="720" >
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                <button type="button" name="button">DO SOMETHING</button>
+                <h5>Alex Pardee</h5>
+                <p>Freelance artist, apparel designer, comic creator.</p>
+                <button type="button" name="button">View</button>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="https://picsum.photos/1280/720?image=1084" class="d-block w-100" alt="...">
+            <div class="carousel-item" id="item">
+              <img src="https://static1.squarespace.com/static/5a9c9ad0c3c16afaa4ed0c88/5bd7c5c98165f5c34caaf206/5c7092c4f4e1fc9f85af7484/1553917761101/RED+BIRD.jpg?format=2500w" class="d-block w-100" alt="Red Bird" width="1280" height="720">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button type="button" name="button">DO SOMETHING</button>
+                <h5>BYOUSART</h5>
+                <p>Surreal fine art. Limited edition prints.</p>
+                <button type="button" name="button">View</button>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="https://picsum.photos/1280/720?image=1084" class="d-block w-100" alt="...">
+            <div class="carousel-item"id="item">
+              <img src="http://creaturebox.com/wp-content/uploads/images/greg/gb_creaturebox_gallery_11.jpg" class="d-block w-100" alt="Gaurdian, Greg" width="1280" height="720">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button type="button" name="button">DO SOMETHING</button>
+                <h5>Creature Box</h5>
+                <p>Cartoons, character design, random delusions.</p>
+                <button type="button" name="button">View</button>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="https://picsum.photos/1280/720?image=1074" class="d-block w-100" alt="...">
+            <div class="carousel-item" id="item">
+              <img src="https://payload.cargocollective.com/1/5/178997/10124418/octopus-rift-pt_1100.jpg" class="d-block w-100" alt="Octopus Rift" width="1280" height="720">
               <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                <button type="button" name="button">DO SOMETHING</button>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://picsum.photos/1280/720?image=1084" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>4th slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button type="button" name="button">DO SOMETHING</button>
+                <h5>Pez Artwork</h5>
+                <p>Illistrator and painter. Insipred by graffiti, and pop culture.</p>
+                <button type="button" name="button">View</button>
               </div>
             </div>
           </div>
@@ -114,62 +112,62 @@
     <section class="container-fluid">
      <div class="row">
        <div class="col-lg-4">
-         <h2>Heading</h2>
-         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+         <h2>Discover</h2>
+         <p>Glass Icon</p>
        </div>
        <div class="col-lg-4">
-         <h2>Heading</h2>
-         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+         <h2>Connect</h2>
+         <p>Network Icon</p>
        </div>
        <div class="col-lg-4">
-         <h2>Heading</h2>
-         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+         <h2>Support</h2>
+         <p>Shopping Icon</p>
        </div>
      </div>
     </section>
     <section class="container-fluid">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <h1 class="display-4">Subscribe</h1>
+          <p class="lead">Join a mailing list to receive updates on new artists, new projects, and more.</p>
         </div>
       </div>
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <h2 class="featurette-heading">Fine Art. <span class="text-muted">It'll blow your mind.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" src="https://picsum.photos/300/300?image=1084" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="https://payload.cargocollective.com/1/5/178997/12228091/eraser_2500_c.jpg" alt="Erase">
         </div>
       </div>
       <hr class="featurette-divider">
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <h2 class="featurette-heading">Limited Edition Prints. <span class="text-muted">See for yourself.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           <p><a class="btn btn-secondary" href="#" role="button">&laquo; View details</a></p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto" src="https://picsum.photos/300/300?image=1084" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="https://static1.squarespace.com/static/52f442b6e4b04cffe22d78f0/5a33225453450a16518a930d/5a3337c141920241eb392827/1513306051072/FreeSquare1.jpg?format=750w" alt="Alex Pardee">
         </div>
       </div>
       <hr class="featurette-divider">
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <h2 class="featurette-heading">Comics and More. <span class="text-muted">Much more.</span></h2>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" src="https://picsum.photos/300/300?image=1084" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="http://creaturebox.com/wp-content/uploads/images/greg/gb_creaturebox_gallery_12.jpg" alt="Thorndyke">
         </div>
       </div>
       <div class="jumbotron jumbotron-fluid lower">
         <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <h1 class="display-4">Subscribe</h1>
+          <p class="lead">Join a mailing list to receive updates on new artists, new projects, and more.</p>
         </div>
       </div>
     </section>
@@ -179,27 +177,27 @@
             <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div class="col p-4 d-flex flex-column position-static">
                 <strong class="d-inline-block mb-2 text-primary">World</strong>
-                <h3 class="mb-0">Featured post</h3>
-                <div class="mb-1 text-muted">Nov 12</div>
+                <h3 class="mb-0">Featured Show</h3>
+                <div class="mb-1 text-muted">April 12</div>
                 <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="stretched-link">Continue reading</a>
               </div>
               <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <img src="https://payload.cargocollective.com/1/5/178997/13418568/Flyer-sweetBDf_888.jpg" alt="London 2018" height="250" width="200">
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
               <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-success">Design</strong>
-                <h3 class="mb-0">Post title</h3>
-                <div class="mb-1 text-muted">Nov 11</div>
+                <strong class="d-inline-block mb-2 text-success">Art</strong>
+                <h3 class="mb-0">New Collection</h3>
+                <div class="mb-1 text-muted">April 11</div>
                 <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="stretched-link">Continue reading</a>
               </div>
               <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <img src="https://payload.cargocollective.com/1/5/178997/12228072/nightmare-pt_1100.jpg" alt="Nightmare Collection" height="250" width="200">
               </div>
             </div>
           </div>
@@ -209,21 +207,14 @@
         <li class="media">
           <img src="https://picsum.photos/75/75?image=1062" class="mr-3" alt="...">
           <div class="media-body">
-            <h5 class="mt-0 mb-1">List-based media object</h5>
+            <h5 class="mt-0 mb-1">New Apparel Release</h5>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
         </li>
         <li class="media my-4">
           <img src="https://picsum.photos/75/75?image=1062" class="mr-3" alt="...">
           <div class="media-body">
-            <h5 class="mt-0 mb-1">List-based media object</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-        </li>
-        <li class="media">
-          <img src="https://picsum.photos/75/75?image=1062" class="mr-3" alt="...">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">List-based media object</h5>
+            <h5 class="mt-0 mb-1">Comic Release</h5>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
         </li>
